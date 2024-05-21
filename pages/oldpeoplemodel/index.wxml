@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="icon-container">
+        <image class="icon" src="../../images/icons/wxtx.png"></image>
+    </view>
+    <view class="text-container">
+        <text class="title">关怀模式</text>
+    </view>
+    <view class="text-container">
+        <text class="title">xxxxxxxxxxxxxxxxxxxxxx</text>
+    </view>
+    <button bindtap="toggleMode" class="btn">{{mode?'关闭':'开启'}}</button>
+</view>

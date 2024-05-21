@@ -1,0 +1,6 @@
+<view class="container">
+    <button bindtap="gotoKnowledge" class="btn1" style="width:90vw;">安全知识</button>
+    <button bindtap="gotoPicture" class="btn2" style="width:90vw;">拍照上传</button>
+    <button bindtap="gotoShopping" class="btn3" style="width:90vw;">积分商城</button>
+    <button bindtap="gotoUserCenter" class="btn4" style="width:90vw;">退出</button>
+</view>

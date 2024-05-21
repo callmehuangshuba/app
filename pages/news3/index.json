@@ -1,0 +1,5 @@
+{
+  "usingComponents": { "cloud-tip-modal": "/components/cloudTipModal/index" },
+  "navigationBarBackgroundColor": "#cce6ff",
+  "navigationBarTitleText": "安全知识"
+}

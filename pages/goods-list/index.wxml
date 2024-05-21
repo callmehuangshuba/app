@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="tip_text" wx:if="{{isLoading}}"> 加载中... </view>
+    <block wx:if="{{!isLoading}}">
+        <view class="goods-list" wx:if="{{goodsList.length>=1}}">
+            <view class="goods-item {{index%2===0?'even':'odd'}}" wx:for="{{goodsList}}" wx:for-item="goodsDetail" wx:key="_id">
+                <image class="goods-image" mode="widthFix" src="../../images/xcx.png"></image>
+                <view class="goods-title">{{goodsDetail.title}}</view>
+                <view class="goods-bottom-container">
+                    <view class="goods-price">
+                        <view class="price-symbol">¥</view>
+                        <view class="price-content">{{goodsDetail.price/100}}</view>
+                    </view>
+                    <view bind:tap="generateMPCode" class="btn-share">分享</view>
+                </view>
+            </view>
+        </view>
+        <view class="tip_text" wx:else>暂无数据，请按照快速入门教程操作并查看效果</view>
+        <mp-code-modal imageSrc="{{codeImageSrc}}" visible="{{codeModalVisible}}"></mp-code-modal>
+    </block>
+</view>
+<view class="bottom_tips"> 参考快速开始教程，快速了解使用云开发开发小程序
+</view>

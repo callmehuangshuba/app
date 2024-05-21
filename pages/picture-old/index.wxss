@@ -1,0 +1,42 @@
+.container {
+  background-image: url(https://636c-cloud1-0gdm8ga3ea780c52-1325470626.tcb.qcloud.la/bg2.jpg?sign=71dc4c77f784d7f0371dd4bb893e69a4&t=1712075186);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+.container,
+.icons-container {
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+}
+.icons-container {
+  left: 10px;
+  position: fixed;
+  top: 10px;
+}
+.icons {
+  border-radius: 50%;
+  height: 12vw;
+  width: 12vw;
+}
+.icons-camera {
+  border-radius: 50%;
+  height: 40vw;
+  width: 40vw;
+}
+.title {
+  margin-left: 5px;
+}
+.button {
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+.resultImg {
+  height: 428rpx;
+  width: 428rpx;
+}

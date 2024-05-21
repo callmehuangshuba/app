@@ -1,0 +1,28 @@
+<view class="container">
+    <view class="userinfo_container">
+        <view class="username" style="font-size: 12px" wx:if="{{userInfo}}">{{welcomeMessage}}</view>
+        <view class="username" wx:else>登录后查看积分</view>
+    </view>
+    <view class="score-container" wx:if="{{userInfo}}">
+        <view class="score-text">当前积分：{{this_score}}</view>
+    </view>
+    <view class="score-container" wx:else>
+        <view class="score-text">当前积分⚡：0</view>
+    </view>
+    <block wx:if="{{goodsList.length>=1}}">
+        <view class="goods-list">
+            <view class="goods-item {{index%2===0?'even':'odd'}}" wx:for="{{goodsList}}" wx:for-item="goodsDetail" wx:key="_id">
+                <image class="goods-image" mode="widthFix" src="{{goodsDetail.imgsrc}}"></image>
+                <view class="goods-title">{{goodsDetail.title}}</view>
+                <view class="goods-bottom-container">
+                    <view class="goods-price">
+                        <view class="price-symbol">{{goodsDetail.price}}⚡</view>
+                    </view>
+                    <button bind:tap="buy" class="buy-btn" data-index="{{index}}">兑换</button>
+                </view>
+            </view>
+        </view>
+        <view class="tip_text">已经到底端了哦</view>
+    </block>
+    <view class="tip_text" wx:else>暂无数据，请按照快速入门教程操作并查看效果</view>
+</view>

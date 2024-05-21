@@ -1,0 +1,97 @@
+.container {
+  background-color: #fff;
+  width: 100%;
+}
+.goods-bottom-container {
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.score-container {
+  padding: 20rpx;
+  text-align: center;
+}
+.score-text {
+  color: #333;
+  font-size: 24rpx;
+}
+.userinfo_container {
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  gap: 20rpx;
+}
+.avatar {
+  border-radius: 50%;
+  height: 128rpx;
+  width: 128rpx;
+}
+.score {
+  margin-left: 30rpx;
+}
+.score,
+.username {
+  color: #333;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 32rpx;
+  max-width: 250rpx;
+}
+.username {
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+.tip_text {
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 28rpx;
+  justify-content: center;
+  width: 100%;
+}
+.goods-list,
+.tip_text {
+  display: -webkit-flex;
+  display: flex;
+}
+.goods-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+.goods-item {
+  margin-bottom: 20rpx;
+  width: calc(50% - 20rpx);
+}
+.goods-image {
+  border-radius: 5rpx;
+  width: 100%;
+}
+.goods-title {
+  color: #333;
+  font-size: 14px;
+}
+.price-symbol {
+  margin-right: 50px;
+}
+.goods-price,
+.price-symbol {
+  color: red;
+  font-size: 14px;
+}
+.buy-btn {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 0;
+  text-align: center;
+  text-decoration: none;
+}
+.bottom_tips {
+  bottom: 100rpx;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 28rpx;
+  position: fixed;
+  text-align: center;
+}

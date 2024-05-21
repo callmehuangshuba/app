@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="main">
+        <view class="step_container" wx:for="{{steps}}" wx:for-item="step" wx:key="id">
+            <view class="step_title" data-step="{{step.id}}" id="step_{{step.id}}">
+                <view class="font_title_2">{{step.title}}</view>
+            </view>
+            <view class="step_content">
+                <block wx:for="{{step.contents}}" wx:key="index">
+                    <view class="text_zone" wx:if="{{item.type==='text'}}">
+                        <rich-text nodes="<p style='line-height: 26px;'>{{item.content}}</p>"></rich-text>
+                    </view>
+                    <view class="code_zone" wx:if="{{item.type==='code'}}">
+                        <image bind:tap="copyCode" class="btn-copy" data-code="{{item.content}}" src="../../images/icons/copy.png"></image>
+                        <rich-text nodes="<pre style='overflow: scroll;'>{{item.content}}</pre>"></rich-text>
+                    </view>
+                    <view class="image_zone" wx:if="{{item.type==='image'}}">
+                        <image mode="widthFix" src="cloud://cloud1-0gdm8ga3ea780c52.636c-cloud1-0gdm8ga3ea780c52-1325470626/pictures/{{item.content}}"></image>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

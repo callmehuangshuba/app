@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="icons-container">
+        <image class="icons" mode="aspectFit" src="/images/xcx.png"></image>
+        <view class="title">小和山捡井盖</view>
+    </view>
+    <image s bindtap="chooseImage" class="icons-camera" mode="aspectFit" src="cloud://cloud1-0gdm8ga3ea780c52.636c-cloud1-0gdm8ga3ea780c52-1325470626/pictures/zxj.png"></image>
+    <view>拍照上传</view>
+</view>

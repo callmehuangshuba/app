@@ -1,0 +1,51 @@
+<view class="page_container">
+    <view class="top_bg"></view>
+    <view class="main_content">
+        <view class="userinfo_container">
+            <image bind:tap="login" class="avatar" mode="widthFix" src="{{userInfo?userInfo.avatarUrl:'../../images/icons/wxtx.png'}}"></image>
+            <block wx:if="{{userInfo}}">
+                <view class="username">{{userInfo.nickName}}</view>
+                <view class="username" style="font-size: 12px">{{welcomeMessage}}</view>
+            </block>
+            <view bind:tap="login" class="username" wx:else>请点击登录</view>
+        </view>
+        <view class="settings_container">
+            <view class="setting_item">
+                <view class="left">
+                    <image class="setting_icon" src="../../images/icons/customer-service.svg"></image>
+                    <button class="contact-button" openType="contact"> 联系客服 </button>
+                </view>
+                <image class="arrow_icon" src="../../images/arrow.svg"></image>
+            </view>
+            <view bind:tap="gotoHistory" class="setting_item">
+                <view class="left">
+                    <image class="setting_icon" src="../../images/icons/his.png"></image>
+                    <view class="setting_text">历史记录</view>
+                </view>
+                <image class="arrow_icon" src="../../images/arrow.svg"></image>
+            </view>
+            <view bind:tap="gotoMyProp" class="setting_item">
+                <view class="left">
+                    <image class="setting_icon" src="../../images/icons/prop.png"></image>
+                    <view class="setting_text">我的道具</view>
+                </view>
+                <image class="arrow_icon" src="../../images/arrow.svg"></image>
+            </view>
+            <view bind:tap="gotoOldPeopleModel" class="setting_item">
+                <view class="left">
+                    <image class="setting_icon" src="../../images/icons/older.png"></image>
+                    <view class="setting_text">关怀模式</view>
+                </view>
+                <image class="arrow_icon" src="../../images/arrow.svg"></image>
+            </view>
+            <view bind:tap="gotoWxCodePage" class="setting_item">
+                <view class="left">
+                    <image class="setting_icon" src="../../images/icons/share.svg"></image>
+                    <view bind:tap="logout" class="setting_text">退出登录</view>
+                </view>
+                <image class="arrow_icon" src="../../images/arrow.svg"></image>
+            </view>
+        </view>
+    </view>
+    <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+</view>

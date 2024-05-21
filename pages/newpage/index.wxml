@@ -1,0 +1,8 @@
+<image class="resultImg" mode="aspectFit" src="{{imageSrc}}" wx:if="{{imageSrc}}"></image>
+<view class="container">
+    <view class="title">broke：井盖破损</view>
+    <view class="title">lose：井盖缺失</view>
+    <view class="title">uncovered：井盖未盖</view>
+    <view class="title">circle：井圈问题</view>
+    <view class="title">good：井盖完好</view>
+</view>

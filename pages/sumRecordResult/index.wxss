@@ -1,0 +1,64 @@
+.tip {
+  font-size: 23rpx;
+  margin: 30rpx auto 0;
+  text-align: center;
+}
+.tip,
+.top_tip {
+  color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+}
+.top_tip {
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  text-align: left;
+}
+.box_text {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 300rpx 0;
+}
+.box_text,
+.code_box {
+  background-color: #fff;
+  margin-top: 30rpx;
+  text-align: center;
+}
+.code_box {
+  padding: 17rpx;
+}
+.code_box_title {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+  text-align: left;
+}
+.code_box_record {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.code_box_record_title {
+  color: rgba(0, 0, 0, 0.5);
+}
+.code_box_record_detail,
+.code_box_record_title {
+  font-size: 26rpx;
+  padding: 20rpx 0;
+  width: 33%;
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  color: #07c160;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 250rpx auto 0;
+  text-align: center;
+  width: 300rpx;
+}
+.line {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1rpx;
+  width: 100%;
+}

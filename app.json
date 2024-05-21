@@ -1,0 +1,72 @@
+{
+  "style": "v2",
+  "tabBar": {
+    "color": "#A2A9B0",
+    "selectedColor": "#07C160",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/picture/index",
+        "text": "拍照上传",
+        "iconPath": "images/icons/examples.png",
+        "selectedIconPath": "images/icons/examples-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "安全知识",
+        "iconPath": "images/icons/zx.png",
+        "selectedIconPath": "images/icons/zx-active.png"
+      },
+      {
+        "pagePath": "pages/shopping/index",
+        "text": "积分商城",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/user-center/index",
+        "text": "我",
+        "iconPath": "images/icons/usercenter.png",
+        "selectedIconPath": "images/icons/usercenter-active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "pages": [
+    "pages/user-center/index",
+    "pages/user-center-old/index",
+    "pages/picture/index",
+    "pages/picture-old/index",
+    "pages/knowledge/index",
+    "pages/shopping/index",
+    "pages/shopping-old/index",
+    "pages/post1/index",
+    "pages/index/index",
+    "pages/index-old/index",
+    "pages/goods-list/index",
+    "pages/examples/index",
+    "pages/exampleDetail/index",
+    "pages/deployService/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index",
+    "pages/web/index",
+    "pages/news1/index",
+    "pages/news2/index",
+    "pages/news3/index",
+    "pages/history/index",
+    "pages/newpage/index",
+    "pages/oldpeoplemodel/index",
+    "pages/oldpeoplemodel2/index",
+    "pages/prop",
+    "pages/prop/index"
+  ]
+}

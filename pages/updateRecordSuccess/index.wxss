@@ -1,0 +1,26 @@
+page {
+  text-align: center;
+}
+.icon {
+  margin: 80rpx 0 50rpx;
+}
+.title {
+  font-size: 42rpx;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+}
+.info {
+  font-size: 36rpx;
+  margin: 0 auto;
+  width: 90%;
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  color: #07c160;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 550rpx auto 0;
+  text-align: center;
+  width: 300rpx;
+}

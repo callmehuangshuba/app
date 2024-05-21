@@ -1,0 +1,15 @@
+<view class="container">
+    <block wx:if="{{userGoodsList.length>=1}}">
+        <view class="goods-list">
+            <view class="goods-item " wx:for="{{userGoodsList}}" wx:key="_id">
+                <image class="goods-image" mode="widthFix" src="{{item.imgsrc}}"></image>
+                <view class="goods-title">{{item.title}}</view>
+                <view class="goods-bottom-container">
+                    <button bind:tap="buy" class="buy-btn" data-index="{{index}}">兑换</button>
+                </view>
+            </view>
+        </view>
+        <view class="tip_text">已经到底端了哦</view>
+    </block>
+    <view class="tip_text" wx:else>暂无可用道具</view>
+</view>

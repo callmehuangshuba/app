@@ -1,0 +1,37 @@
+<view class="container">
+    <view class="main">
+        <image class="icons" mode="aspectFit" src="/images/xcx.png"></image>
+        <view class="title1 font_title_1" style="font-size: 30px">井盖隐患危害普及</view>
+        <view class="ability_container">
+            <view bindtap="redirectToNews" class="ability_item" data-id="{{point.id}}" style="font-size: 20px" wx:for="{{knowledgePoints}}" wx:for-item="point" wx:key="id"> {{point.title}}
+</view>
+        </view>
+        <view class="seperator"></view>
+        <view class="step_container" wx:for="{{steps}}" wx:for-item="step" wx:key="id">
+            <view class="step_title" data-step="{{step.id}}" id="step_{{step.id}}">
+                <view class="step_id_container">
+                    <view class="step_id_mark">NO.</view>
+                    <view class="step_id_content">0{{step.id}}</view>
+                </view>
+                <view class="font_title_2" style="font-size: 20px">{{step.title}}</view>
+            </view>
+            <view class="step_content" style="font-size: 20px">
+                <block wx:for="{{step.contents}}" wx:key="index">
+                    <view class="text_zone" wx:if="{{item.type==='text'}}">
+                        <rich-text nodes="<p style='line-height: 26px;'>{{item.content}}</p>"></rich-text>
+                    </view>
+                    <view class="code_zone" wx:if="{{item.type==='code'}}">
+                        <image bind:tap="copyCode" class="btn-copy" data-code="{{item.content}}" src="../../images/icons/copy.png"></image>
+                        <rich-text nodes="<pre style='overflow: scroll;'>{{item.content}}</pre>"></rich-text>
+                    </view>
+                    <view class="image_zone" wx:if="{{item.type==='image'}}">
+                        <image mode="widthFix" src="cloud://cloud1-0gdm8ga3ea780c52.636c-cloud1-0gdm8ga3ea780c52-1325470626/pictures/{{item.content}}"></image>
+                    </view>
+                </block>
+            </view>
+            <view bindtap="redirectToNews" class="btn-view-demo-page" data-id="{{step.id}}" wx:if="{{step.showJumpButton}}">了解详情</view>
+            <view class="seperator"></view>
+        </view>
+        <view class="tip_text">已经到底端了哦~</view>
+    </view>
+</view>

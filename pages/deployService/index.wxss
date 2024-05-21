@@ -1,0 +1,24 @@
+page {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+.page {
+  padding: 0 32px;
+}
+.title {
+  font-weight: 500;
+  margin-top: 16px;
+}
+.info,
+.title {
+  color: #000;
+  font-family: PingFang SC;
+  font-size: 17px;
+}
+.info {
+  font-weight: 400;
+}
+.img,
+.info {
+  margin-top: 12px;
+}

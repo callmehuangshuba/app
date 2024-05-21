@@ -1,0 +1,7 @@
+<view class="container">
+    <view wx:for="{{photoList}}" wx:key="index">
+        <image mode="aspectFill" src="{{item.fileID}}"></image>
+        <view>上传时间: {{item.uploadTime}}</view>
+        <view>地点:{{item.location}}</view>
+    </view>
+</view>
